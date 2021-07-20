@@ -9,6 +9,24 @@ class XylophoneApp extends StatelessWidget {
     player.play('note$soundNumber.wav');
   }
 
+  Expanded piano({Color color, int soundNumber}){
+    return Expanded(
+      child: Card(
+        child: Container(
+          width: 400,
+          height: 70,
+          child: ElevatedButton(
+            child: null,
+            style: ElevatedButton.styleFrom(
+              primary: Colors.red,
+            ),
+            onPressed: () => playSound(1),
+          ),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,21 +39,7 @@ class XylophoneApp extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Expanded(
-                child: Card(
-                  child: Container(
-                    width: 400,
-                    height: 70,
-                    child: ElevatedButton(
-                      child: null,
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.red,
-                      ),
-                      onPressed: () => playSound(1),
-                    ),
-                  ),
-                ),
-              ),
+              piano(color: Colors.red, soundNumber: 1),
               SizedBox(
                 height: 5,
               ),
