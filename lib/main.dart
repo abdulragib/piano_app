@@ -18,9 +18,9 @@ class XylophoneApp extends StatelessWidget {
           child: ElevatedButton(
             child: null,
             style: ElevatedButton.styleFrom(
-              primary: Colors.red,
+              primary: color,
             ),
-            onPressed: () => playSound(1),
+            onPressed: () => playSound(soundNumber),
           ),
         ),
       ),
@@ -43,117 +43,33 @@ class XylophoneApp extends StatelessWidget {
               SizedBox(
                 height: 5,
               ),
-              
-              Expanded(
-                child: Card(
-                  child: Container(
-                    width: 400,
-                    height: 70,
-                    child: ElevatedButton(
-                      child: null,
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.orange,
-                      ),
-                      onPressed: () => playSound(2),
-                    ),
-                  ),
-                ),
-              ),
+
+              piano(color: Colors.orange, soundNumber: 2),
               SizedBox(
                 height: 5,
               ),
-              
-              Expanded(
-                child: Card(
-                  child: Container(
-                    width: 400,
-                    height: 70,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.yellow,
-                      ),
-                      child: null,
-                      onPressed: () => playSound(3),
-                    ),
-                  ),
-                ),
-              ),
+
+              piano(color: Colors.yellow, soundNumber: 3),
               SizedBox(
                 height: 5,
               ),
-              
-              Expanded(
-                child: Card(
-                  child: Container(
-                    width: 400,
-                    height: 70,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.green,
-                      ),
-                      child: null,
-                      onPressed: () => playSound(4),
-                    ),
-                  ),
-                ),
-              ),
+
+              piano(color: Colors.green, soundNumber: 4),
               SizedBox(
                 height: 5,
               ),
-              
-              Expanded(
-                child: Card(
-                  child: Container(
-                    width: 400,
-                    height: 70,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.lightBlueAccent,
-                      ),
-                      child: null,
-                      onPressed: () => playSound(5),
-                    ),
-                  ),
-                ),
-              ),
+
+              piano(color: Colors.lightBlueAccent, soundNumber: 5),
               SizedBox(
                 height: 5,
               ),
-              
-              Expanded(
-                child: Card(
-                  child: Container(
-                    width: 400,
-                    height: 70,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.blue,
-                      ),
-                      child: null,
-                      onPressed: () => playSound(6),
-                    ),
-                  ),
-                ),
-              ),
+
+              piano(color: Colors.blue, soundNumber: 6),
               SizedBox(
                 height: 5,
               ),
-              
-              Expanded(
-                child: Card(
-                  child: Container(
-                    width: 400,
-                    height: 70,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.purple,
-                      ),
-                      child: null,
-                      onPressed: () => playSound(7),
-                    ),
-                  ),
-                ),
-              ),
+
+              piano(color: Colors.purple, soundNumber: 7),
               SizedBox(
                 height: 10,
               ),
